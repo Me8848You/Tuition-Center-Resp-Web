@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Tution Center in The Town</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --clr: rgb(228, 38, 38);
+            --blah:rgb(0, 0, 0);
+        }
+        .main{
+            height: 300vh;
+            width: 100%;
+            background: rgb(48,221,129);
+            background: linear-gradient(41deg, rgba(48,221,129,1) 0%, rgba(62,217,205,1) 28%, rgba(181,12,236,1) 56%, rgba(191,51,232,1) 57%, rgba(219,43,126,1) 85%);
+        }
+        /* nav lai halka modify gardeu na paila...  */
+        nav{
+            height: 7vh;
+            width: 100%;
+            /* background-color: rgb(53, 0, 0); */
+            background: rgb(48,221,129);
+            background: linear-gradient(90deg, rgba(48,221,129,1) 0%, rgba(42,237,222,1) 26%, rgba(181,12,236,1) 59%, rgba(25,203,187,1) 85%);
+            position: sticky;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        nav ul li{
+            margin: 10px;
+            /* margin-top:35px ; */
+            padding:10px;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+        /* now aaba nav vitra vako lai halka herne layek banaideu  */
+        nav ul li a{
+            text-decoration: none;
+            font-size: 21px;
+            color: rgb(0, 0, 0);
+            /* margin-top: 
+            paddin; */
+            padding: 5px;
+            /* margin-top: 110px; */
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            transition: 0.7s;
+        }
+        nav ul li a:hover{
+            color: var(--blah);
+            text-decoration: 1px underline;
+        }
+        .logo-content span{
+            color: rgb(0, 0, 0);
+            font-size: 65px;
+            font-weight: bold;
+            position: relative;
+            top: 10px;
+            left: 25px;
+            /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+            font-family: "Arial Black", Gadget, sans-serif;;
+            /* margin-top: 25px ; */
+            padding: 10px;
+            -webkit-text-stroke: 2px #ffffff;
+        }
+        .logo-content p{
+            font-size: 23px;
+            width: 45%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5px;
+            margin-left: 35px;
+            padding: 10px;
+        }
+        .logo-content a{
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            background:black;
+            border: 2px solid rgb(0, 255, 242);
+            margin: 5px;
+            margin-left: 45px;
+            box-shadow: 2px 5px 5px aqua;
+
+            padding: 10px;
+            /* padding: 7px; */
+            text-decoration: none;
+            /* font-family:Arial, Helvetica, sans-serif; */
+            border-radius: 12px;
+        }
+        .logo-content a:hover{
+            /* opacity: 0.7; */
+            color: rgb(255, 255, 255);
+            /* border: 2px solid #ffffff; */
+            color: aqua;
+            /* font-weight: bold; */
+            /* background-color: rgb(255, 28, 28); */
+        }
+        .content{
+            background:url("./images/img5.jpg")no-repeat right;
+            height: 55vh;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .img img{
+            height: 350px;
+            width: 320px;
+            margin: 7px;
+            border-radius: 25px;
+            border: 2px solid var(--blah);
+        }
+        .teacher .teach img{
+            height: 280px;
+            width: 280px;
+            border-radius: 25px;
+            margin: 9px;
+            /* margin-left: 10p ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid purple;
+        }
+        
+        .teacher .teach{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            width: 22%;
+            margin-left: 10px;
+            padding: 10px;
+            border: 2px solid aqua;
+            border-radius: 25px;
+            width: fit-content;
+        }
+        #cr7{
+            font-size: 35px;
+            color: var(--blah);
+            font-family: cursive;
+            background-color: white;
+            text-align: center;
+        }
+        .teach p{
+            color: black;
+            font-size: 17px;
+            font-family:fantasy;
+            text-align: center;
+            letter-spacing: 0px;
+            word-spacing: 3px;
+        }
+        .teach p a{
+            text-decoration: none;
+            color: blue;
+
+        }
+        .teach{
+            margin: 10px auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav type="none">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#teacher">Team</a></li>
+                <li><a href="#">NEXT</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="logo-content">
+                <span>
+                    PRAGYA Edu Hub 
+                </span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, modi ad. Commodi ex cupiditate libero ipsa nemo aut, fugiat quod eligendi in iure tempora est? Suscipit vel quibusdam mollitia ab.</p>
+                <!-- <hr> -->
+                <br>
+                <br>
+                
+                <a href="#contact">Contact Us</a>
+            </div>
+            <br>
+            <!-- <hr> -->
+        </div>
+        <h2 id="cr7">What We Provide ✔✌</h2>
+        <div class="img">
+            <img src="./images/img1.jpg" alt="">
+            <img src="./images/img2.jpg" alt="">
+            <img src="./images/img3.jpg" alt="">
+            <img src="./images/img4.jpg" alt="">
+            <!-- <img src="./images/img5.jpg" alt=""> -->
+        </div>
+        <hr>
+        <h2 id="cr7" >We Have The Best Teacher So Far </h2>
+        <div class="teacher" id="teacher">
+            <div class="teach">
+                <img src="./images/me.JPG" alt="">
+                <p>
+                    Name: Suman Sharma <br>
+                    Programmer/BEIT student/Engineer <br>visit info: <a href="http://sumansharma.info.np" target="_blank" rel="noopener noreferrer"> sumansharma.info.np</a> 
+                </p> 
+                </div>
+                <div class="teach">
+                <img src="./images/yubi (1).jpeg" alt="">
+                <p>
+                    Name: Yubraj Adhikari <br>Programmer/BEIT student/Engineer <br>visit info: <a href="http://yubrajadhikari.com.np" target="_blank" rel="noopener noreferrer">yubrajadhikari.com.np</a> 
+                </p>
+                </div>
+            <div class="teach">
+                <img src="./images/binu.jpeg" alt="">
+                <p>
+
+                    Name: Binay Rijal <br>Programmer/BEIT student/Engineer <br>visit info: <a href="http://binayrijal.com.np" target="_blank" rel="noopener noreferrer">Binayrijal.com.np</a> 
+                </p>
+            </div>
+           <div class="teach">
+                <img src="./images/gaurab.jpg" alt="">
+                <p>
+                    Name: Gaurab Paudyal<br>
+                    Programmer/BECE student/Engineer <br>visit info: <a href="http://Gaurabpaudyal.com.np" target="_blank" rel="noopener noreferrer"> Gaurabpaudyal.com.np</a> 
+                </p> 
+                </div>
+                <br>
+                <hr>
+                <h2 id="cr7">You Can Directly Contact Us Through:</h2>
+                
+        </div>
+        <div class="post">
+            <form action="backend.php" method="post" id="foo" style="transition: 2s;">
+              <h3 style="color: rgb(42, 11, 56); text-align: center; font-family: cursive; "> Get In Touch</h3>
+                <p>
+
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+                </p>
+                <textarea name="text" id="name" cols="30" rows="10" style="color: black;" placeholder="  Your Message Here..." required></textarea>
+                <br>
+                <p>
+                    <input type="submit" value="Sent" id="submit" onclick="checkmsg">
+                </p>
+                <script>
+                    function checkmsg(){
+                        document.getElementById("submit").innerHTML="Thank you for messaging us";
+                    }
+                </script>
+            </form>
+            <form action="#" style="width: 28%; " class="contact" id="contact">
+                <h3 style="text-align: center; font-size: 26px; font-family: cursive; color: rgb(7, 12, 41);">Contact Us</h3>
+                <p>
+
+                    <i class="fa fa-address-book"></i>
+                        <!-- <br>PRAGYA Edu Hub<br> -->
+                        Contact  No <br>
+                        1. 9805170371 <br>
+                        2. 9866734714 <br>
+                        3. 9866134956 <br>
+                        Email: pragyaeduhub@gmial.com <br>
+                        Post Box: 005-234-990
+                    </p>
+                    <br>
+                <p>
+                    <i class=" fa fa-map-marker"></i>
+                    PRAGYA Edu Hub
+                    <br>Balkumari-13, Lalitpur Nepal <br>
+                    Kathmandu Branch <br>
+                    Better You Visit Our Office
+                <p>
+                    <i class="fa fa-info-circle"></i><br>Get <a href="#" style="color: rgb(47, 0, 255); text-decoration: none;">More</a> About Us 
+                </p>
+            </form>
+            <!-- <form action="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id magnam dolor non asperiores similique ipsum amet consequuntur est harum hic labore ipsam nam, soluta esse, dolorum doloremque ex. Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatum aliquid! Eaque laborum deleniti dolorum consequuntur, repellat repellendus atque necessitatibus, omnis, placeat ipsum molestiae maiores sint nobis sit aut minima. loe
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, molestiae! Cupiditate numquam eius ex asperiores, minus excepturi quidem obcaecati blanditiis architecto non eaque vero nostrum ad placeat alias similique enim?
+            </form> -->
+            <form action="" id="skills" style="width: 28%;">
+                <h3 style="color: rgb(0, 0, 0); font-family: cursive; text-align: center;">WHY US ....?*</h3>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px; color: transparent;"> <b style="color: crimson;">TUTION</b> ......................... <b style="color: crimson;">70%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">CARRIER COUNSELLING</b> <b style="color: crimson;"></b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">PASSIVE SUPPORT</b> ... <b style="color: crimson;">80%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">FUTURE</b> ...___________... <b style="color: crimson;">40%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">JAVASCRIPT</b> .... <b style="color: crimson;">30%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">MYSQL</b> ..<b style="color: crimson;">20%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">MYSQL</b> ..<b style="color: crimson;">20%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">SKILLS LOADING</b>__________<b style="color: crimson;">100%</b></a>
+                </p>
+            </form>
+        </div>
+        <hr>
+        <h2 id="cr7">Stay Connected Through Social Media link</h2>
+        <hr color="black">
+        <div class="social">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <hr color="black">
+        <p style="text-align: center;">
+            <small style="color: rgb(36, 36, 36);">copyright &copy 20222 PRAGRA Edu Hub</small>
+        </p>
+    </div>
+</div>
+</body>
+</html>
