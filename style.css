@@ -149,13 +149,14 @@ nav ul li a:hover{
     padding:3px;
     /* background-color: black; */
 }
-/* .logo-content ul li:hover{
-    background-color: black;
-    color: aqua;
-    border-radius: 3px;
-    width: fit-content;
-    /* list-style-type:; */
-/* } */ 
+.logo-content ul p a{
+    font-size: 15px;
+    padding: 9px;
+    /* background-color: black; */
+
+    /* width: 455px !important; */
+}
+
 .logo-content a{
     font-size: 25px;
     color: rgb(255, 255, 255);
@@ -308,8 +309,9 @@ form{
 .social a{
     margin: 3px 3%;
     border: 2px solid rgb(0, 0, 0);
+    box-shadow: inset 15px 15px 5px rgb(233, 38, 217), inset -15px -15px 5px rgb(224, 26, 224);
     padding: 9px;
-    border-radius: 7px;
+    border-radius: 10px;
     object-fit: contain;
     width: fit-content;
     height: fit-content;
@@ -324,6 +326,7 @@ form{
 }
 .social a .fa:hover{
     color: white;
+    /* border: black; */
 }
 .social{
     display: inline;
@@ -335,15 +338,39 @@ form{
 }
 .social .fa{
     font-size: 40px;
+    color: rgb(255, 238, 0);
     width: 40px;
+    border: 2px solid rgb(255, 145, 0);
+    border-radius: 9px;
+    padding: 3px;
+    /* margin: 9px ; */
+    /* margin-right: 10px ; */
+}
+.social a{
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 38px;
 }
 /* .fa fa-facebook{
     width: 75px;
 } */
 @media screen and (max-width:600px) {
+    .social .fa{
+        font-size: 40px;
+        padding: 7px;
+        /* width: 32px; */
+    }
+    .social{
+        margin-left: 10px;
+        padding: 0px;
+    }
+    .social a{
+        margin-right: 2px;
+    }
     .logo-content span{
         font-size: 35px;
-        margin-left: 5px;
+        margin-left: 0px;
         padding: 2px;
         -webkit-text-stroke-color: 2px purple;
 
@@ -361,6 +388,20 @@ form{
         left: 60%;
         font-size: 19px;
     }
+    .logo-content ul p a{
+        font-size: 13px !important;
+        margin-left: 7px;
+        position: relative;
+        left: 0px;
+        top: 20px;
+        margin: 0px;
+        /* padding: ; */
+        border: 1px solid white;
+        font-size: x-small !important;
+    }
+    /* .logo-content{
+        background: linear-gradient(rgba(1,1,11,0.8),rgba(1,1,1,1),url("./images/img4.jpg"));
+    } */
     .img{
         display: flex;
 
@@ -461,5 +502,8 @@ nav{
  #skills{
      width: 80% !important;
      font-size: 13px;
+ }
+ .social a i{
+     margin-left: 5px !important;
  }
 }
